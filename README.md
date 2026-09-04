@@ -1,0 +1,71 @@
+## Robert Paszek
+
+Cognitive Science & AI at Tilburg University. I build developer tools and things
+that have to survive contact with real data — scrapers, schedulers, 3D interfaces.
+Mostly Rust, TypeScript and Python.
+
+---
+
+### [`ctx`](https://github.com/rpaszekdev/ctx) — codebase context tracker, in Rust
+
+Git tracks what your code *is*. `ctx` tracks what it *means*: a daemon parses every
+save, diffs the symbols, and lets that heat ripple outward through the import graph
+so you can see where the work is actually happening. Built to feed compact context
+to AI coding agents instead of dumping the whole repo at them.
+
+`Rust` · `ratatui` · `notify` · TypeScript / Rust / Python import resolution
+
+<img src="https://raw.githubusercontent.com/rpaszekdev/ctx/main/docs/images/ctx-view.png" width="600" alt="ctx view — the live TUI">
+
+---
+
+### [`brain-quiz`](https://github.com/rpaszekdev/brain-quiz) — 3D neuroanatomy trainer → **[brainquiz.study](https://brainquiz.study)**
+
+Learn the brain on a real WebGL brain rather than a flat diagram. 102 Desikan-Killiany
+meshes, 49 clickable regions, and 32 quiz types **generated at runtime** from the
+underlying data instead of an authored question bank. No login, no backend — it all
+runs in the browser.
+
+`Next.js 16` · `React 19` · `Three.js` · `Tailwind v4`
+
+<img src="https://raw.githubusercontent.com/rpaszekdev/brain-quiz/main/docs/images/explore.png" width="600" alt="Brain Atlas explore mode">
+
+---
+
+### [`OBSIDIAX`](https://github.com/rpaszekdev/OBSIDIAX) — tmux inside Obsidian
+
+Real tmux panes in an Obsidian tab, plus a rail that lists every past Claude Code
+session read straight off disk. Click a row and tmux splits open a pane already
+resumed into that session. The PTY lives behind a swappable interface, because it
+was the only part likely to break.
+
+`TypeScript` · `xterm.js` · `node-pty` · Obsidian plugin API
+
+<img src="https://raw.githubusercontent.com/rpaszekdev/OBSIDIAX/main/hero.png" width="600" alt="OBSIDIAX — tmux and the Claude Code history rail inside Obsidian">
+
+---
+
+### [`ui-ux-design-mcp`](https://github.com/rpaszekdev/ui-ux-design-mcp) — design knowledge for coding agents
+
+An MCP server so an agent can look up design rules instead of guessing: 74 principles,
+30 patterns and 89 tokens, each with rationale, good and bad examples, and a book
+citation. Returns Markdown, not JSON, because the reader is a language model.
+
+`TypeScript` · `Model Context Protocol` · `Fuse.js` · WCAG A/AA/AAA
+
+---
+
+### [`ksef-api`](https://github.com/rpaszekdev/ksef-api) — Polish e-invoicing, abstracted
+
+One REST API over KSeF's XML, certificates, sessions and retries, built multi-tenant
+for accounting offices juggling hundreds of client NIPs. Certificates encrypted at
+rest with Fernet; invoices render as real FAKTURA VAT documents with QR codes.
+A prototype that shipped to Fly.io and has since been idled.
+
+`Python 3.12` · `FastAPI` · `Postgres` · `Redis` · `arq` · `Alembic`
+
+---
+
+<sub>Also on here: an <a href="https://github.com/rpaszekdev/openalex-mcp">OpenAlex MCP server</a> for scholarly search,
+a <a href="https://github.com/rpaszekdev/autonomous_robot">conversational robot</a> from an Autonomous Systems course,
+and <a href="https://github.com/rpaszekdev/Csai-">study tools</a> for the CSAI programme.</sub>
