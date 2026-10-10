@@ -60,27 +60,6 @@ was the only part likely to break.
 
 ---
 
-### [`ui-ux-design-mcp`](https://github.com/rpaszekdev/ui-ux-design-mcp) — design knowledge for coding agents
-
-An MCP server so an agent can look up design rules instead of guessing: 74 principles,
-30 patterns and 89 tokens, each with rationale, good and bad examples, and a book
-citation. Returns Markdown, not JSON, because the reader is a language model.
-
-`TypeScript` · `Model Context Protocol` · `Fuse.js` · WCAG A/AA/AAA
-
----
-
-### [`ksef-api`](https://github.com/rpaszekdev/ksef-api) — Polish e-invoicing, abstracted
-
-One REST API over KSeF's XML, certificates, sessions and retries, built multi-tenant
-for accounting offices juggling hundreds of client NIPs. Certificates encrypted at
-rest with Fernet; invoices render as real FAKTURA VAT documents with QR codes.
-A prototype that shipped to Fly.io and has since been idled.
-
-`Python 3.12` · `FastAPI` · `Postgres` · `Redis` · `arq` · `Alembic`
-
----
-
 <sub>Also on here: an <a href="https://github.com/rpaszekdev/openalex-mcp">OpenAlex MCP server</a> for scholarly search,
 a <a href="https://github.com/rpaszekdev/autonomous_robot">conversational robot</a> from an Autonomous Systems course,
 and <a href="https://github.com/rpaszekdev/Csai-">study tools</a> for the CSAI programme.</sub>
