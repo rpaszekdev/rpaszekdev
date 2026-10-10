@@ -6,6 +6,21 @@ Mostly Rust, TypeScript and Python.
 
 ---
 
+### [`TUiDO`](https://github.com/rpaszekdev/tuido) — terminal Pomodoro timer with a shared todo list
+
+A single-file, dependency-free curses app: your tasks on the left, an ASCII
+pomodoro that fills with `#` as the focus timer runs on the right. The same todo
+list is exposed as a CLI, so an AI agent in another pane can add and check off
+tasks while the timer keeps running — the TUI reloads live on every change. It
+tracks daily focus time, logs sessions by day, and has an `i` ideas scratchpad.
+
+`Python` · `curses` · `stdlib only`
+
+<img src="assets/tuido.png" width="600" alt="TUiDO — two-column terminal with a filling ASCII pomodoro">
+
+---
+
+
 ### [`ctx`](https://github.com/rpaszekdev/ctx) — codebase context tracker, in Rust
 
 Git tracks what your code *is*. `ctx` tracks what it *means*: a daemon parses every
